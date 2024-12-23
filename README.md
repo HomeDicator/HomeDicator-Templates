@@ -7,6 +7,9 @@
 
 </div>
 
+
+
+
 ## Features
 - Supports multiple pages
 - Each page can have multiple tiles (4 visible at the same time - more with scrolling)
@@ -37,8 +40,10 @@ https://github.com/user-attachments/assets/9b2b40b6-c974-4bb2-97ca-c21715880793
 </div>
 
 ## Configuration
-Copy the `HomeDicator.yaml` folder into your esphome config folder.  
+Copy both the `HomeDicator.yaml` and the `HomeDicator` folder into your esphome config folder.  
+Copy the folder `HomeDicator` from the [ESPHome-Package](https://github.com/HomeDicator/ESPHome-Package) into your esphome config folder.   
 You can have multiple `HomeDicator.yaml` files with different names for different devices.  
+The folder must retain its name and does not need to be duplicated for each device. 
 
 Open the `HomeDicator.yaml` and get conformable with its settings.  
 
