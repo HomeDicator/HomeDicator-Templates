@@ -18,23 +18,26 @@ substitutions:
   wifi_ssid: !secret wifi_ssid
   wifi_password: !secret wifi_password
 
-  # ---------------------------------
+  # ----------------------------------------------------------------------------------------------------
   # ADJUST TOTAL NUMBER OF PAGES HERE
-  # ---------------------------------
-  total_pages: "2" # is used to generate navigation dots and their logic (set it to your pages + 1 for the settings page)
+  # Is used to generate navigation dots and their logic (set it to your pages + 1 for the settings page)
+  # ----------------------------------------------------------------------------------------------------
+  total_pages: "2"
 
-  # --------------
-  # OTHER SETTINGS
-  # --------------
-  user_interface_debug_mode: "false" # Draws borders around objects and labels for layouting
-  
   # ----------------------------------------------------------------------
   # GITHUB VERSION TAG
   # Here you can select the version of the core HomeDicator package to use
   # Changing this might require you to update your configuration.
   # Currently you need to manually download the files of the new version.
   # ----------------------------------------------------------------------
-  homedicator_core_version_tag: "v0.3.0"
+  homedicator_core_version_tag: "v0.3.1"
+  
+  # --------------
+  # OTHER SETTINGS
+  # --------------
+  page_transition_time: 150ms # How long to animate the transition between pages.
+  user_interface_debug_mode: "false" # Draws borders around objects and labels for layouting
+
 
 packages:
   HomeDicator: !include HomeDicator/device/seeed-sensecap-indicator.yaml
